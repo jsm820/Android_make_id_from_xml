@@ -36,7 +36,7 @@ public class Converter {
 	    e.printStackTrace();
 	}
 
-	ArrayList<String[]> idSet = new ArrayList<>();
+	ArrayList<String[]> idSet = new ArrayList<String[]>();
 	while (!everything.isEmpty()) {
 	    int startIndex = everything.indexOf("<");
 	    int endIndex = everything.indexOf(" ", startIndex);
