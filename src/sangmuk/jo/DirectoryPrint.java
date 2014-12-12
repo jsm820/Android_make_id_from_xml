@@ -10,7 +10,7 @@ public class DirectoryPrint
 	public static void main(String[] args)
 	{
 		subDirList(
-				"directory",
+				"C:\\Users\\red\\workspace",
 				0, new ArrayList<Integer>());
 	}
 
@@ -30,8 +30,8 @@ public class DirectoryPrint
 
 			if (dArray.contains(i))
 			{
-				str += "¦¢";
-				fileStr += "¦¢";
+				str += "â”‚";
+				fileStr += "â”‚";
 			} else
 			{
 				str += "  ";
@@ -40,7 +40,7 @@ public class DirectoryPrint
 			}
 		}
 
-		// fileStr += "¦¢";
+		// fileStr += "ï¿½ï¿½";
 
 		try
 		{
@@ -67,7 +67,7 @@ public class DirectoryPrint
 			{
 				if (directoryCount >= 1)
 				{
-					tmpStr = fileStr + "¦¢  ";
+					tmpStr = fileStr + "â”‚  ";
 				} else
 				{
 					tmpStr = fileStr + "    ";
@@ -89,14 +89,14 @@ public class DirectoryPrint
 					directoryCount--;
 					if (directoryCount == 0)
 					{
-						tmpStr = str + "¦¦¦¡";
+						tmpStr = str + "â””â”€";
 						if (dArray.contains(count))
 						{
 							dArray.remove((Integer) count);
 						}
 					} else
 					{
-						tmpStr = str + "¦§¦¡";
+						tmpStr = str + "â”œâ”€";
 					}
 
 					System.out.println(tmpStr + file.getName() + ",package");
